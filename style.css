@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    outline: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.container{
+    background-color: #333;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.card {
+    color: white;
+    height: 90vh;  /* Ensures the card always takes 90% of the viewport height */
+    width: 50%;
+    background-color: #222;
+    padding: 1rem;
+    border-radius: 1rem; /* Optional rounded corners */
+    overflow: auto; /* Scrollbars appear only when content overflows */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Optional: adds a subtle shadow */
+}
+
+.card-title{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+input{
+    border: none;
+    border-radius: 0.6rem;
+    padding: 0.5rem;
+    width: 80%;
+}
+
+.addTodoButton{
+    border: none;
+    border-radius: 0.6rem;
+    padding: 0.5rem;
+    background-color: orange;
+    color: white;
+    transition: all 0.3s;
+    cursor: pointer;
+    width: 16%;
+    margin-left: 1rem;
+    padding-right: 1.3rem;
+}
+
+.addTodoButton:hover{
+    background-color: white;
+    color: black;
+
+}
+
+.li-style{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 0.6rem;
+    margin: 1rem 0;
+    transition: all 0.3s;
+
+}
+
+.li-style:hover{
+    background-color: #111;
+}
+
+.bg-success{
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    color: black;
+    background-color: #ddffdd;
+    border-left: 6px solid #04aa6d;
+}
+
+.bg-danger{
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    color: black;
+    background-color: #ffdddd;
+    border-left: 6px solid #f44336;
+}
+
+.copy{
+    position: fixed;  
+      bottom: 0;        
+      left: 0;          
+      width: 100%;     
+      background-color: #333; 
+      color: white;    
+      text-align: center;
+      padding: 10px;  
+      z-index: 1000;
+    
+}
